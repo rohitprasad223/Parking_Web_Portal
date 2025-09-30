@@ -64,13 +64,15 @@ function sortLink($field,$label,$currentField,$currentOrder,$search){
     <div class="card-body">
       <h3 class="text-center text-primary mb-4">- All Vehicle Records -</h3>
 
-      <!-- Search -->
-      <form method="GET" class="d-flex justify-content-end mb-3">
-        <input type="text" name="search" value="<?php echo htmlspecialchars($search); ?>" placeholder="🔍 Search vehicle..." class="form-control search-box me-2">
-        <button type="submit" class="btn btn-primary me-2">Search</button>
+      <form method="GET" class="d-flex mb-3" style="width: 100%;">
+        <input type="text" 
+               name="search" 
+               value="<?php echo htmlspecialchars($search); ?>" 
+               placeholder="🔍 Search vehicle..." 
+               class="form-control me-2" 
+               style="flex: 1;">
+        <button type="submit" class="btn btn-primary">Search</button>
       </form>
-
-      <!-- Table -->
       <div class="table-responsive">
         <table class="table table-bordered table-hover">
           <thead class="table-dark text-center">
